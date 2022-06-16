@@ -33,8 +33,10 @@ public class Collectable : MonoBehaviour
 
         if(other.tag == "Player")
         {
+            other.GetComponent<Collection>().AddToCollection();//call method on the Collection component of other object
             Destroy(gameObject); //destroy this gameObject (collectable object)
         }
 
     }//end OnTriggerEnter()
+
 }//end class
