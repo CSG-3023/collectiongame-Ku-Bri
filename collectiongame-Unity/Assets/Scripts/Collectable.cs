@@ -22,14 +22,14 @@ public class Collectable : MonoBehaviour
     private void Awake()
     {
         collectableCount++; //add to collectable
-        Debug.Log("Number of Collectables " + collectableCount);
+        Debug.Log("<color=lightblue>Number of Collectables </color>" + collectableCount);
 
     }//end Awake()
 
     //Called when a GameObject collides with another GameObject
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collectable Triggered");
+        Debug.Log("<color=yellow>Collectable Triggered</color>");
 
         if(other.tag == "Player")
         {
