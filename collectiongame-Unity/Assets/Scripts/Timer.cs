@@ -34,8 +34,6 @@ public class Timer : MonoBehaviour
         }
     }//end CheckTimerIsInScene
     #endregion
-
-    //Timer Singleton
     [Tooltip("Start time in seconds")]
     public float startTime = 10f; //time for level (if level is timed)
 
