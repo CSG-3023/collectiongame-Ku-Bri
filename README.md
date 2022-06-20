@@ -1,19 +1,19 @@
-# Project/Assigment Title
-**Title:** Game Name
+# Collection Game
+**Title:** Coin Collector
 
-**Genre:** e.g. Arcade
+**Genre:** Collection Game
 
 **Platform:** PC
 
 **Game Concept**
 
-Synopsis of the game. 
+Find and collect all the coins and try to get the fasted time. 
 
 **Game Objects**
 
--List the primary game objects
+Collect all the coins before the timer runs out.
 
 **Instructions/Controls**
 
-Describe the player controls.
+WASD or arrow keys for movement. Space bar for jump. Track pad or mouse for view. 
 
