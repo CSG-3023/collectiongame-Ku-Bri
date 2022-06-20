@@ -29,7 +29,7 @@ public class ConstantRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(new Vector3(0, y, 0)); //applying rotation on the x axis
+        transform.Rotate(new Vector3(0, y, 0)); //applying rotation on the y axis
     }
 
    
