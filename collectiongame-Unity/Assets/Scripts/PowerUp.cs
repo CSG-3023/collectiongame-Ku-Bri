@@ -40,6 +40,7 @@ public class PowerUp : MonoBehaviour
         Debug.Log("<color=blue>PowerUps used </color>" + playerPowerUpCount);
     }//end PowerUpCount()
 
+    //Called when a GameObject collides with another GameObject
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Count added to PowerUps Used by Player");

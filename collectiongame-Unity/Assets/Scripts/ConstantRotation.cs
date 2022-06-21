@@ -22,14 +22,14 @@ public class ConstantRotation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        y = 0.5f;  //velocity in the y direction
+        y = 0.5f;  //velocity around the y axis
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(new Vector3(0, y, 0)); //applying rotation on the y axis
+        transform.Rotate(new Vector3(0, y, 0)); //applying rotation around the y axis
     }
 
    

@@ -1,3 +1,13 @@
+/****
+ * Created by: Bridget Kurr using Code from Black Bug on YouTube.com
+ * Date Created: June 21, 2022
+ * 
+ * Last Edited by:
+ * Last Edited:
+ * 
+ * Description: A class to use a PowerUp to add time to the timer in a level
+ ****/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
