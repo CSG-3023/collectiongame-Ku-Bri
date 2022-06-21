@@ -116,7 +116,7 @@ public class Timer : MonoBehaviour
 
         if(currentTime > 0)
         {
-            currentTime += 30;//adds 5 seconds to timer on PowerUp collection
+            currentTime += 3;//adds 3 seconds to timer on PowerUp collection
             Debug.Log("Time added to currentTime");
         }
     }

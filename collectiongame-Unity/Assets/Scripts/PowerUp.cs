@@ -14,13 +14,20 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-    public Timer timerScript;
+    
     /***VARIABLES***/
     private int playerPowerUpCount = 0;
     static public int powerUpsInScene;
+    public Timer timer;
 
-    // Awake() is called on instantiation before Start
-    private void Awake()
+    // Start is called before the first frame update
+    void Start()
+    {
+        timer = Timer.LevelTimer; //reference to level timer
+    }//end Start()
+
+        // Awake() is called on instantiation before Start
+        private void Awake()
     {
         powerUpsInScene++; //counts collectables in scene
         Debug.Log("<color=lightblue>PowerUps in scene </color>" + powerUpsInScene);
@@ -41,7 +48,7 @@ public class PowerUp : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("<color=yellow> PowerUp Triggered </color>");
-            timerScript.AddTime(); //call method on contact with PowerUp
+            timer.AddTime(); //call method on contact with PowerUp
             Destroy(gameObject); //destroy this gameObject 
         }
     }//end OnTriggerEvent

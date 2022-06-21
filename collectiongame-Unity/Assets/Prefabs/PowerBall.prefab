@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6517720519329780155}
   - component: {fileID: 6773342970966711622}
   - component: {fileID: -8067922915420788975}
+  - component: {fileID: -5987722818090995989}
   m_Layer: 0
   m_Name: PowerBall
   m_TagString: Untagged
@@ -63,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7080697695a8a364eaa46bd1e9adbbcf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1507c19a9a79f0041aee6aabe88355de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 0}
 --- !u!135 &-8067922915420788975
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -110,3 +112,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.49999997
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-5987722818090995989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7943079975634188447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9e2c6ff9835464da20af8e2c223304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 0, y: 0.25, z: 0}
+  period: 2
