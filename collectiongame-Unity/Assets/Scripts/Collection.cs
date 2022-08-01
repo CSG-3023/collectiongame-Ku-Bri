@@ -28,6 +28,14 @@ public class Collection : MonoBehaviour
 
     private Timer timer; //reference to level timer
 
+    GameManager gm;
+
+    //Awake is called on instantiation before Start
+    private void Awake()
+    {
+        gm = GameManager.GM; //reference to game manager
+    }//end Awake()
+
 
     // Start is called before the first frame update
     void Start()
@@ -53,6 +61,8 @@ public class Collection : MonoBehaviour
 
             //if timer exists, stop timer
             if(timer != null) { timer.timerStopped = true; }
+
+            gm.collection = (collectablesInCollection + "/" + winCollectAmount);
 
             Debug.Log("YOU WIN!");
 
