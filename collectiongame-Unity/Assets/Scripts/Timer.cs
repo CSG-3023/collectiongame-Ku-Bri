@@ -40,7 +40,7 @@ public class Timer : MonoBehaviour
     [Tooltip("Start time in seconds")]
     public float startTime = 10f; //time for level (if level is timed)
 
-    private float currentTime; //current time of the time
+    private float currentTime; //current time of the timer
 
     [HideInInspector]
     public bool timerStopped = false; //check if timer is stopped
@@ -113,5 +113,17 @@ public class Timer : MonoBehaviour
 
         return string.Format("{0:00}:{1:00}", minutes, seconds); //return time as string
     }//end DisplayTime
+
+
+    public void AddTime()
+    {
+        Debug.Log("AddTime() Accessed");
+
+        if(currentTime > 0)
+        {
+            currentTime += 3;//adds 3 seconds to timer on PowerUp collection
+            Debug.Log("Time added to currentTime");
+        }
+    }
 
 }//end Timer() class
