@@ -903,7 +903,7 @@ MonoBehaviour:
   loseMessage: You Lose
   winMessage: You Win
   endMsg: 
-  recordHighScore: 0
+  recordHighScore: 1
   defaultHighScore: 1000
   defaultsLives: 3
   resetLostLevel: 1

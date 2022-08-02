@@ -70,7 +70,8 @@ public class HUDScript : MonoBehaviour
     {
         //if textbox exists update value
 
-        if (levelCountTextbox) { levelCountTextbox.text = "Lives " + lives; }
+        if (levelCountTextbox) { levelCountTextbox.text = "Level " + level; }
+        if (livesTextbox) { livesTextbox.text = "Lives " + lives; }
         if (scoreTextbox) { scoreTextbox.text = "Score " + score; }
         if (highScoreTextbox) { highScoreTextbox.text = "High Score " + highscore; }
         if (TimerTextbox) { TimerTextbox.text = "Time: " + timer; }

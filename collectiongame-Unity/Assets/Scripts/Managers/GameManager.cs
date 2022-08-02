@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
 
     [Header("GAME MESSAGES")]
     public string defaultEndMessage = "Game Over";//the end screen message, depends on winning outcome
-    public string loseMessage = "You Lose"; //Message if player looses
+    public string loseMessage = "You Lose"; //Message if player loses
     public string winMessage = "You Win"; //Message if player wins
     [HideInInspector] public string endMsg;//the end screen message, depends on winning outcome
 
@@ -221,7 +221,7 @@ public class GameManager : MonoBehaviour
 
             case GameState.gameExited:
                 Debug.Log("Game Exited");
-                UnityEditor.EditorApplication.isPlaying = false;
+               // UnityEditor.EditorApplication.isPlaying = false; can use if statement 
                 Application.Quit();
                 break;
 
@@ -364,6 +364,11 @@ public class GameManager : MonoBehaviour
     }//end BeatLevel()
 
     //Load Next Level
+
+    public void LostLevel()
+    {
+        endMsg = loseMessage;
+    } //end LostLevel()
     void LoadLevel()
     {
         Debug.Log("Levels " + gameLevelsCount);

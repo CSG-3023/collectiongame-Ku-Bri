@@ -44,7 +44,7 @@ public class Collection : MonoBehaviour
         if(useCollectableCount)
         {
             //set the win amount to the amount of collectables in the scene
-            winCollectAmount = Collectable.collectableCount;
+            winCollectAmount = 1; //Collectable.collectableCount;
         }//end if(useCollectableCount)
 
         Debug.Log("Win collect amount: " + winCollectAmount);
@@ -62,7 +62,9 @@ public class Collection : MonoBehaviour
             //if timer exists, stop timer
             if(timer != null) { timer.timerStopped = true; }
 
-            //Debug.Log("YOU WIN!");
+            gm.SetTargetState(GameState.gameLevelEnded);
+            gm.BeatLevel();
+            Debug.Log("YOU WIN!");
 
         }//end if()
 
