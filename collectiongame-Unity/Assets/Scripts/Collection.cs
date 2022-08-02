@@ -14,6 +14,8 @@ using UnityEngine;
 
 public class Collection : MonoBehaviour
 {
+    GameManager gm;
+
     /***VARIABLES***/
     [Tooltip("Number of collectables to beat level")]
     public int winCollectAmount; //number of collectables to beat the level
@@ -28,6 +30,10 @@ public class Collection : MonoBehaviour
 
     private Timer timer; //reference to level timer
 
+    private void Awake()
+    {
+        gm = GameManager.GM;
+    }//end Awake()
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +53,8 @@ public class Collection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        gm.collection = (collectablesInCollection + "/" + winCollectAmount);
+
         if(collectablesInCollection == winCollectAmount)
         {
             hasCollectedAll = true;
@@ -54,7 +62,7 @@ public class Collection : MonoBehaviour
             //if timer exists, stop timer
             if(timer != null) { timer.timerStopped = true; }
 
-            Debug.Log("YOU WIN!");
+            //Debug.Log("YOU WIN!");
 
         }//end if()
 
