@@ -34,8 +34,8 @@ public class HUDScript : MonoBehaviour
     private int lives;
     private int score;
     private int highscore;
-    //private string timer;
-    //private string collection;
+    private string timer;
+    private string collection;
 
     // Start is called before the first frame update
     void Start()
@@ -58,8 +58,8 @@ public class HUDScript : MonoBehaviour
 
     void GetGameStats()
     {
-        //timer = gm.timer;
-        //collection = gm.collection;
+        timer = gm.timer;
+        collection = gm.collection;
         lives = gm.Lives;
         score = gm.Score;
         highscore = gm.HighScore;
@@ -73,8 +73,8 @@ public class HUDScript : MonoBehaviour
         if (levelCountTextbox) { levelCountTextbox.text = "Lives " + lives; }
         if (scoreTextbox) { scoreTextbox.text = "Score " + score; }
         if (highScoreTextbox) { highScoreTextbox.text = "High Score " + highscore; }
-        //if (TimerTextbox) { TimerTextbox = "Time:" + timer; }
-        //if (collectableCountTextbox) { collectableCountTextbox = "Collected:" + collection; }
+       // if (TimerTextbox) { TimerTextbox = "Time " + timer; }
+       // if (collectableCountTextbox) { collectableCountTextbox = "Collected " + collection; }
 
     } //end SetHUD()
 } //end HUDScript

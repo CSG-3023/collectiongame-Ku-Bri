@@ -300,7 +300,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Set Defaults");
 
         //SET ALL GAME LEVEL VARIABLES FOR START OF GAME
-        timer = "40";
+        timer = "00:00";
         collection = "0";
         lives = defaultsLives; //set the number of lives
         score = 0; //set starting score

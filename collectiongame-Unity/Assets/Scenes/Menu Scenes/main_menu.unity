@@ -886,13 +886,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a71fe6c83b99cd4888d4add607898ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 
+  collection: 
   currentGameState: 0
   targetGameState: 0
   lastGameState: 0
   startScene: main_menu
   endScene: end_scene
   gameLevels:
-  - CoinGame_Level
+  - SampleScene
   gameLevelsCount: 0
   gameTitle: Dollar Dash
   gameCredits: Made by Bridget Kurr
