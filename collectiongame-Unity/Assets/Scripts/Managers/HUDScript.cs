@@ -73,8 +73,8 @@ public class HUDScript : MonoBehaviour
         if (levelCountTextbox) { levelCountTextbox.text = "Lives " + lives; }
         if (scoreTextbox) { scoreTextbox.text = "Score " + score; }
         if (highScoreTextbox) { highScoreTextbox.text = "High Score " + highscore; }
-       // if (TimerTextbox) { TimerTextbox = "Time " + timer; }
-       // if (collectableCountTextbox) { collectableCountTextbox = "Collected " + collection; }
+       // if (TimerTextbox) { TimerTextbox = "Time: " + timer; }
+       // if (collectableCountTextbox) { collectableCountTextbox = "Collected: " + collection; }
 
     } //end SetHUD()
 } //end HUDScript
