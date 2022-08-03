@@ -2674,7 +2674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b99c36d23d57bd840845c7a79e691532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTime: 3
+  startTime: 5
   timerStopped: 0
 --- !u!4 &1614367696
 Transform:

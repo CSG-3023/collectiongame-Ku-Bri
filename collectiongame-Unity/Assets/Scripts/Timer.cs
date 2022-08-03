@@ -97,6 +97,7 @@ public class Timer : MonoBehaviour
     //Runs events for the end of the level
     private void LevelEnd()
     {
+        //if (gm.endMsg != gm.winMessage) { gm.endMsg = gm.loseMessage; }
         gm.SetTargetState(GameState.gameLevelEnded);
         Debug.Log("level end");
     }//end LevelEnd()

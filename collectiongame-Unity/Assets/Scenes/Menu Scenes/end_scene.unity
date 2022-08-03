@@ -599,6 +599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a71fe6c83b99cd4888d4add607898ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winCondition: 0
   timer: 
   collection: 
   currentGameState: 0

@@ -20,6 +20,8 @@ public enum GameState { gameStarted, gamePlaying, gameEnded, gameLevelEnded, gam
 public class GameManager : MonoBehaviour
 {
 
+    public bool winCondition = false;
+
     public String timer;
     public String collection;
 
@@ -212,6 +214,9 @@ public class GameManager : MonoBehaviour
 
             case GameState.gameEnded:
                 Debug.Log("Game Ended");
+                
+                if (winCondition) { endMsg = winMessage; }
+                else { endMsg = loseMessage; }
 
                 //if end scene does not exists
                 if (endScene == null || endScene == "") { return; }
@@ -300,6 +305,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Set Defaults");
 
         //SET ALL GAME LEVEL VARIABLES FOR START OF GAME
+        endMsg = loseMessage;
         timer = "00:00";
         collection = "0";
         lives = defaultsLives; //set the number of lives
@@ -363,12 +369,14 @@ public class GameManager : MonoBehaviour
         SetTargetState(GameState.gameLevelEnded);
     }//end BeatLevel()
 
-    //Load Next Level
 
-    public void LostLevel()
-    {
-        endMsg = loseMessage;
-    } //end LostLevel()
+    /* public void LostLevel()
+     {
+         endMsg = loseMessage;
+     } //end LostLevel() */
+
+
+    //Load Next Level
     void LoadLevel()
     {
         Debug.Log("Levels " + gameLevelsCount);
